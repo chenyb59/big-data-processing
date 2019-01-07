@@ -1,0 +1,17 @@
+End of file
+the final buckets are : 
+[[7, 9116], [7, 9342], [6, 9599], [6, 9730], [5, 9858], [4, 9919], [3, 9957], [3, 9970], [2, 9985], [1, 9991], [1, 9995], [0, 10000]]
+                size    end timestamp
+Bucket 0	1     	10000 
+Bucket 1	2     	9995  
+Bucket 2	2     	9991  
+Bucket 3	4     	9985  
+Bucket 4	8     	9970  
+Bucket 5	8     	9957  
+Bucket 6	16    	9919  
+Bucket 7	32    	9858  
+Bucket 8	64    	9730  
+Bucket 9	64    	9599  
+Bucket 10	128   	9342  
+Bucket 11	128   	9116  
+for the last one thousand bits , the estimated number of 1s is :  585
