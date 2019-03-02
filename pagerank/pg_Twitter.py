@@ -6,9 +6,8 @@ from operator import add
 
 
 def split_follow(follows):
-    #print follows
-    #info = re.split(r'\s+', follows)
-    info = follows.split(' ')
+    info = re.split(r'\s+', follows)
+    # info = follows.split(' ')
     return info[0], info[1]
 
 
@@ -67,7 +66,8 @@ def main():
         # compute the leaked rank and add them back to make sure the total rank is 1.
         leak = 1 - r2.values().sum()
         if leak > 0 :
-            r3 = r1.map(lambda usr : (usr , float(leak / num))).union(r2).reduceByKey(add)
+            # r3 = r1.map(lambda usr : (usr , float(leak / num))).union(r2).reduceByKey(add)
+            r3 = r1.mapValues(lambda rank : rank + float(leak / num))
         else:
             r3 = r2
 
